@@ -1,0 +1,40 @@
+package multi;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class StreamAPI_Demo2 {
+
+	public static void main(String[] args) {
+		
+		List<Employee> list =new ArrayList<Employee>();
+		
+		Consumer<List<Employee>> cons=(list1) ->{
+			
+			for(Employee e:list1)
+			{
+				System.out.println(e.id*2);
+				System.out.println(e.name+"from consumer");
+				System.out.println(e.salary+100);
+				System.out.println("***************************************");
+			}
+		};
+		
+		cons.accept(list);
+	}
+}
+
+class Employee
+{
+	int id;
+	String name;
+	int salary;
+	
+	public Employee(int id,String name,int salary)
+	{
+		this.id=id;
+		this.name=name;
+		this.salary=salary;
+	}
+}

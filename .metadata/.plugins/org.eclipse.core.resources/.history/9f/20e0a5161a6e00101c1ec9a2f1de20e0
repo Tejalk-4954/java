@@ -1,0 +1,32 @@
+package multi;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+
+public class StreamAPI_Demo3 {
+
+	public static void main(String[] args) {
+
+        List<Integer> list=new ArrayList<Integer>();
+        list.add(100);
+        list.add(101);
+        list.add(204);
+        
+        
+        Function<Integer,Double> func=(i)->(i*2.0);
+        
+        list.stream().map(func).forEach((i)-> System.out.println(i)); //Intermediatory Stream
+        
+        
+        List<String> city=new ArrayList<String>();
+        
+        city.add("pune");
+        city.add("Nashik");
+        city.add("mumbai");
+        
+        city.stream().map((i)->(new StringBuffer(i.toUpperCase()))).forEach((i)->System.out.println(i));
+        
+	}
+
+}

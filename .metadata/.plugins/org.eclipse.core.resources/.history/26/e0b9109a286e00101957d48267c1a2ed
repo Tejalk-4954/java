@@ -1,0 +1,17 @@
+package practice_day2;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Imp_program {
+
+	public static void main(String[] args) {
+		
+		String str="necessary";
+		Map<Character,Integer> map=new HashMap<>();
+		
+		
+	}
+
+}
+

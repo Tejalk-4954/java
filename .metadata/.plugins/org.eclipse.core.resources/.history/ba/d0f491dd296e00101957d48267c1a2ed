@@ -1,0 +1,23 @@
+package multi;
+
+import java.util.function.Predicate;
+
+public class PredicateDemo {
+
+	public static void main(String[] args) {
+		Predicate<Integer> pred=new Predicate<Integer>()
+				{
+
+					@Override
+					public boolean test(Integer i) {
+						if(i%2==0)
+						{
+							return true;
+						}
+						return false;
+					}
+			
+				};
+				System.out.println(pred.test(11));
+	}
+}
