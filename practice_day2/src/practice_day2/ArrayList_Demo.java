@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class ArrayList_Demo {
 	
 	public static void main(String[] args) {
+		
+		int age=12;
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
 		list.add(12);
