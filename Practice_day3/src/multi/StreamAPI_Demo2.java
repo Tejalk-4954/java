@@ -14,18 +14,18 @@ public class StreamAPI_Demo2 {
 		list.add(new Employee(2,"cde",1500));
 		
 		
-		Consumer<List<Employee>> cons=(list1) ->{// Terminal Stream
+		Consumer<Employee> cons=(i)->{
 			
-			for(Employee e:list1)
-			{
-				System.out.println(e.id*2);
-				System.out.println(e.name+"from consumer");
-				System.out.println(e.salary+100);
-				System.out.println("***************************************");
-			}
-		};
+			
+			System.out.println(i.id*2);
+			System.out.println(i.name+"from consumer");
+			System.out.println(i.salary-100.0);
+			System.out.println("**********************************");
 		
-		cons.accept(list);
+	};
+		
+//		cons.accept(list);
+		list.stream().forEach(cons);
 	}
 }
 
