@@ -15,7 +15,7 @@ public class StreamAPI_Demo3 {
 		
 		Function<Integer,Double> func=(i)->(i*2.0);
 		
-		list.stream().map(func).forEach((i)->System.out.println(i));//Intermeditory Stream
+		list.stream().map(func).forEach((i)->System.out.println(i));//map is Intermeditory Stream
 		
 		List<String> city=new ArrayList<String>();
 		
