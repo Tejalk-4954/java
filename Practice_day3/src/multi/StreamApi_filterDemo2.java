@@ -1,6 +1,7 @@
 package multi;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class StreamApi_filterDemo2 {
@@ -14,8 +15,8 @@ public class StreamApi_filterDemo2 {
 		list.add(new Employee_1(1,"dipti",3456.12));
 		
 		list.stream().filter((emp)->(emp.getsalary()>30.0)).
-		map((emp)->(new StringBuffer(emp.getname()).reverse()).toString().toUpperCase())
-        .sorted()
+//		map((emp)->(new StringBuffer(emp.getname()).reverse()).toString().toUpperCase())
+        sorted(new salaryComparator())
         .forEach((emp)->System.out.println(emp));
 
 	}
@@ -57,3 +58,18 @@ class Employee_1 implements Comparable<Employee_1>
 	}
 	
 }
+
+
+class salaryComparator implements Comparator<Employee_1>
+{
+
+	@Override
+	public int compare(Employee_1 o1, Employee_1 o2) {
+		
+	  int sal1=(int)o1.getsalary();
+	  int sal2=(int)o2.getsalary();
+	  
+	  return (sal2-sal1);
+		
+	 }
+	}
