@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class StreamApi_filterDemo2 {
+public class StreamApi_sorted {
 	public static void main(String[] args) {
 		
 		List<Employee_1> list=new ArrayList<Employee_1>();
@@ -12,9 +12,9 @@ public class StreamApi_filterDemo2 {
 		list.add(new Employee_1(1,"vishakha",3456.12));
 		list.add(new Employee_1(1,"raj",3356.12));
 		list.add(new Employee_1(1,"reva",3456.12));
-		list.add(new Employee_1(1,"dipti",3456.12));
+		list.add(new Employee_1(1,"dipti",2000.12));
 		
-		list.stream().filter((emp)->(emp.getsalary()>30.0)).
+		list.stream().filter((emp)->(emp.getsalary()>3000.0)).
 //		map((emp)->(new StringBuffer(emp.getname()).reverse()).toString().toUpperCase())
         sorted(new salaryComparator())
         .forEach((emp)->System.out.println(emp));

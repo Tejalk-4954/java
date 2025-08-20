@@ -6,52 +6,46 @@ import java.util.List;
 public class methodreference_third {
 
 	public static void main(String[] args) {
+		Car c=new Car();
 		
-		Car car=new Car();
-		car.id=1;
-        car.name="ferrari";
-        
-        Car car2=new Car();
-        car2.id=101;
-        car2.name="Audi";
-        
-        Car car3=new Car();
-        car2.id=111;
-        car2.name="i20";
-        
-        Car car4=new Car();
-        car2.id=100;
-        car2.name="thar";
-        
-        List<Car> list=new ArrayList<Car>();
-        list.add(car);
-        list.add(car2);
-        list.add(car3);
-        list.add(car4);
-        
-        list.stream().filter(car::check).map(car::upper).forEach((i)->System.out.println(i));
-        
-	}
+		Car c1=new Car();
+		c1.id=1;
+		c1.name="a";
+		
+		Car c2=new Car();
+		c2.id=11;
+		c2.name="b";
+		
+		Car c3=new Car();
+		c3.id=100;
+		c3.name="c";
+		
+		List<Car> list=new ArrayList<>();
+		list.add(c1);
+		list.add(c2);
+		list.add(c3);
+		
+		list.stream().filter(c::checkid).map(c::upper).forEach((i)->System.out.println(i));
+		
+		//cars.stream().filter(car::check).map(car::upper).forEach((i)->System.out.println(i));
 
+		
+	}
 }
 
-class Car
-{
-   int id;
-   String name;
-   
-   public void checkid(Car car)
-   {
-	   System.out.println("id:"+car.name);
-   }
-   
-   public String upper(Car car)
-   {
-	   return car.name.toUpperCase();
-   }
-   
-   public boolean check(Car car)
-   {
-	   return  car.id>100;
-   }
+class Car{
+	int id;
+	String name;
+	
+	public boolean checkid(Car car) {
+		return car.id>10;
+	}
+	
+	public String upper(Car car) {
+		return car.name.toUpperCase();
+	}
+	
+	public void display(Car car) {
+		System.out.println(car.name);
+	}
 }

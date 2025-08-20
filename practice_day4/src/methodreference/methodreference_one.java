@@ -27,7 +27,7 @@ public class methodreference_one {
 class student
 {
    static int id;
-   String name;
+   String name="Tejal";
    
    public student()
    {
@@ -46,7 +46,7 @@ class student
    
    public String toString()
    {
-	   return "my reference";
+	   return id+" "+this.name;
    }
    
    public static List<student> createlist()
