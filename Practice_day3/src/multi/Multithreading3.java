@@ -10,7 +10,7 @@ public class Multithreading3 {
 
 		threadone1 t1=new threadone1(dt);
 
-		threadone1 t2=new threadone1(dt);
+		threadone1 t2=new threadone1(dt);//mutual synchronization because same instace pass between two thread
 		
 		t1.start();
 		t2.start();
