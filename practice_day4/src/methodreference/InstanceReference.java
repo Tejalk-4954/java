@@ -2,11 +2,15 @@ package methodreference;
 
 public class InstanceReference {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	  {
+	        	
+		     
 		
-	}
+	  }
 
 }
+
 
 class car
 {
@@ -20,13 +24,21 @@ class car
 	   this.name=name;
 	   this.price=price;
    }
+   
+   public boolean checkprice()
+   {
+	   if(this.price>100.0)
+	   {
+		   return true;
+	   }
+	   return false;
+   }
 
-  @Override
-  public String toString() 
-  {
-	return "car [id=" + id + ", name=" + name + ", price=" + price + "]";
-  }
-   
-   
+     @Override
+     public String toString() 
+     {
+	   return "car [id=" + id + ", name=" + name + ", price=" + price + "]";
+     }
+     
 }
 
