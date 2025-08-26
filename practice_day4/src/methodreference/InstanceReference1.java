@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InstanceReference1 {
+	
+	// an instance method reference provides a concise way to refer to an existing instance method without explicitly writing a lambda expression.
 
 	public static void main(String[] args)
 	  {

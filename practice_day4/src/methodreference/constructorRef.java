@@ -4,6 +4,10 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class constructorRef {
+	
+	//Constructor references in Java 8 provide a concise way to refer to constructors without explicitly instantiating the class, especially when working with functional interfaces. 
+	  //They are a special type of method reference.
+	//****The syntax for a constructor reference is ClassName::new.*****
 
 	public static void main(String[] args)
 	{
