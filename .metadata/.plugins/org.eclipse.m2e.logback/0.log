@@ -1534,3 +1534,5 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.hibernate
 2025-08-27 09:36:34,508 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
 2025-08-27 09:36:34,537 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2fae5dc3{HTTP/1.1, (http/1.1)}{127.0.0.1:49735}
 2025-08-27 09:36:34,543 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@d80f8ba{STARTING}[12.0.16,sto=0] @1539415ms
+2025-08-27 10:00:24,755 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@d80f8ba{STOPPING}[12.0.16,sto=0]
+2025-08-27 10:00:24,758 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2fae5dc3{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
