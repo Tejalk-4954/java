@@ -9,9 +9,9 @@ public class StreamApi_sorted {
 		
 		List<Employee_1> list=new ArrayList<Employee_1>();
 		
-		list.add(new Employee_1(1,"vishakha",3456.12));
+		list.add(new Employee_1(1,"vishakha",3656.12));
 		list.add(new Employee_1(1,"raj",3356.12));
-		list.add(new Employee_1(1,"reva",3456.12));
+		list.add(new Employee_1(1,"reva",3856.12));
 		list.add(new Employee_1(1,"dipti",2000.12));
 		
 		list.stream().filter((emp)->(emp.getsalary()>3000.0)).
@@ -52,6 +52,11 @@ class Employee_1 implements Comparable<Employee_1>
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "Employee_1 [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+
 	public int compareTo(Employee_1 o) {
 		
 		return o.getname().length()-this.getname().length();
