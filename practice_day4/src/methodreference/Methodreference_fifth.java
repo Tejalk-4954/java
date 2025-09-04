@@ -3,7 +3,7 @@ package methodreference;
 import java.util.ArrayList;
 import java.util.List;
 
-public class methodreference_fifth {
+public class Methodreference_fifth {
 
 	public static int compareratings(Movie m1,Movie m2)
 	{
@@ -31,7 +31,7 @@ public class methodreference_fifth {
 		movies.add(third);
 		movies.add(fourth);
 		
-	   movies.stream().sorted(methodreference_fifth::compareratings).forEach((i)-> System.out.println(i));
+	   movies.stream().sorted(Methodreference_fifth::compareratings).forEach((i)-> System.out.println(i));
 	}
 
 }

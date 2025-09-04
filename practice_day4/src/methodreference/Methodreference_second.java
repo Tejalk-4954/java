@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class methodreference_second {
+public class Methodreference_second {
 
 	public static void main(String[] args) {
 		

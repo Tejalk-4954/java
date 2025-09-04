@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class methodreference_one {
+public class Methodreference_one {
 
 	public static void main(String[] args) {
 		

@@ -5,7 +5,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-public class methodreference_fourth {
+public class Methodreference_fourth {
 
 		 public static double convert(int i)
 		 {
@@ -18,7 +18,7 @@ public class methodreference_fourth {
 		 
 	 public static void main(String args[])
 	{
-	Function<Integer,Double> fun =	methodreference_fourth::convert; 
+	Function<Integer,Double> fun =	Methodreference_fourth::convert; 
 	
 	System.out.println(fun.apply(11));
 	

@@ -3,7 +3,7 @@ package methodreference;
 import java.util.ArrayList;
 import java.util.List;
 
-public class methodreference_third {
+public class Methodreference_third {
 
 	public static void main(String[] args) {
 		Car c=new Car();

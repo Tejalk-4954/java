@@ -1,6 +1,6 @@
 package methodreference;
 
-public class methodreference_six {
+public class Methodreference_six {
 	
 	public static String validateNumber(String number)
 	{
@@ -13,7 +13,7 @@ public class methodreference_six {
 	}
 	
 	public static void main(String[] args) {
-		 Validator<String,String> validate = methodreference_six:: validateNumber;
+		 Validator<String,String> validate = Methodreference_six:: validateNumber;
 		 
 		 System.out.println(validate.validate("1234567891"));
 		
