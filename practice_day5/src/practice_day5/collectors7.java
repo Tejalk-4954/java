@@ -11,7 +11,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
 
-public class collector7 {
+public class collectors7 {
 
 public static void main(String[] args) {
 	

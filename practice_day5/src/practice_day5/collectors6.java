@@ -13,52 +13,52 @@ public class collectors6 {
 
 	public static void main(String[] args) {
 		
-		String str = Arrays.asList("abc","def","ghi","jklM").stream()
-				.collect(new nameAppend());
-		
+		String str=Arrays.asList("abc","def","ghi","jkl","mno").stream().collect(new NameAppender());
 		System.out.println(str);
-		
 	}
 }
 
-class nameAppend implements Collector<String,StringBuilder,String>
+class NameAppender implements Collector<String,StringBuffer,String>
 {
 
-	
-	public Supplier<StringBuilder> supplier() {
+	@Override
+	public Supplier<StringBuffer> supplier() {
 		
-		Supplier<StringBuilder> sup=StringBuilder::new;
-		return sup;
+		Supplier<StringBuffer> supplier=StringBuffer::new;
+		return supplier;
 	}
 
-	
-	public BiConsumer<StringBuilder, String> accumulator() {
+	@Override
+	public BiConsumer<StringBuffer, String> accumulator() {
 		
-		 BiConsumer<StringBuilder, String> bi=(sb,s)->{
-			sb.append(s); 
-		 };
+		BiConsumer<StringBuffer, String> bi=(sb,s)->{
+              
+		  sb.append(s);
+		};
+		
 		return bi;
 	}
 
-	
-	public BinaryOperator<StringBuilder> combiner() {
-		BinaryOperator<StringBuilder> str=(sb1,sb2)->(sb1.append(sb2));
+	@Override
+	public BinaryOperator<StringBuffer> combiner() {
 		
-		return str;
+		BinaryOperator<StringBuffer> bin=(sb1,sb2)->(sb1.append(sb2));
+		
+		return bin;
 	}
 
 	
-	public Function<StringBuilder, String> finisher() {
-		Function<StringBuilder, String> fun=(sb)->sb.toString().toUpperCase();
+	public Function<StringBuffer, String> finisher() {
+		
+		Function<StringBuffer, String> fun=(sb)->sb.toString().toUpperCase();
 		
 		return fun;
 	}
 
 	@Override
 	public Set<Characteristics> characteristics() {
+		
 		return Collections.EMPTY_SET;
 	}
-
-
+	
 }
-
