@@ -2,7 +2,7 @@ package ArrayPrograms;
 
 import java.util.Scanner;
 
-public class ArraySum {
+public class ArrayEven {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);

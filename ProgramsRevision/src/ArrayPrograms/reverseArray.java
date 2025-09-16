@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class reverseArray {
 
 	public static void main(String[] args) {
-		int arr[]= {12,56,88,99};
+		int arr[]= {12,56,88,99,3};
 		System.out.println("original Array::"+Arrays.toString(arr));
 		Reversearray(arr);
 		System.out.println("Reverse Array::"+Arrays.toString(arr));

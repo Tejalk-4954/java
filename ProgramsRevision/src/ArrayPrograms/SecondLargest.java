@@ -17,8 +17,8 @@ public static void main(String[] args) {
     	array[i]=sc.nextInt();
     }
     
-    int max=0;
-    int Second_highest=0;
+    int max=array[0];
+    int Second_highest=array[0];
     
     for(int i=0;i<size;i++)
     {
@@ -26,6 +26,10 @@ public static void main(String[] args) {
     	{
     		Second_highest=max;
     		max=array[i];
+    	}
+    	else if(array[i]<max && array[i]>Second_highest)
+    	{
+    		Second_highest=array[i];
     	}
     	
     }
