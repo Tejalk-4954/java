@@ -93,6 +93,10 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\SpringBoot\NPCI"/>
+			<item value="C:\Users\om\Downloads\delhi_publication"/>
+			<item value="C:\Users\om\Downloads\NPCI"/>
+			<item value="C:\Users\om\Downloads\com.SbiPayment\com.SbiPayment"/>
 			<item value="C:\Users\om\Downloads\order-service\order-service"/>
 		</list>
 		<list key="projectNameTemplate">

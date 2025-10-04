@@ -13,18 +13,29 @@ public class jdbc4 {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 
 				
-				Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","root");
+				Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","tejal");
 				
 				
 				CallableStatement call=con.prepareCall("{call getallstudents()}");
+				/**
+				 * {}=> it is a escape character, 
+				 * it is a procedure call convert this into your appropriate syntax 
+				 * ex:mysql 
+				 */
 				
 				
+				/**
+				 * Delimiter is a symbol which tells the specific language or framework
+				 * that the correct statement has  ended and you can  start your execution 
+				 */
 				ResultSet rs=call.executeQuery();
 				
-				while(rs.next())
-				{
-					System.out.println(rs.getInt(1));
-				}
+				System.out.println(rs !=null);
+				
+//				while(rs.next())
+//				{
+//					System.out.println(rs.getInt(1));
+//				}
 
 				 rs.close();
 				 call.close();
