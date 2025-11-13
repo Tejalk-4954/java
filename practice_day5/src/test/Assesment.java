@@ -104,7 +104,7 @@ class Todo
   }
 }
 
-public class StudentExistsException extends Exception
+ class StudentExistsException extends Exception
 {
 	
 	public StudentExistsException(String msg)
