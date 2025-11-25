@@ -11,23 +11,21 @@ public class prime25To40 {
 			if(num<2)
 			{
 				isprime=false;
+				
 			}
-			else
+			
+			for(int i=2;i<num;i++)
 			{
-				for(int i=2;i<num;i++)
+				if(num%i==0)
 				{
-					if(num%i==0)
-					{
-						isprime=false;
-						break;
-					}
-						
+					isprime=false;
+					break;
 				}
 			}
 			
 			if(isprime)
 			{
-				System.out.println(num+" ");
+				System.out.println("prime numbers are::"+num);
 			}
 		}
 	}

@@ -1,17 +1,22 @@
 package StringPrograms;
 
+import java.util.Scanner;
+
 public class reverseString {
 public static void main(String[] args)
 {
-	String str="tejal";
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any String>>");
+	String str=sc.nextLine();
+	
+	System.out.println("original String is::"+str);
 	String rev=" ";
-	System.out.println("original String::"+str);
+	
 	for(int i=str.length()-1;i>=0;i--)
 	{
 		rev=rev+str.charAt(i);
 	}
 	
-	System.out.println("reverse String::"+rev);
-	
+	System.out.println("reversed String::"+rev);
 }
 }

@@ -9,25 +9,28 @@ public class ArmstrongNo {
 		System.out.println("Enter number::");
 		int number=sc.nextInt();
 		
-		int originalNo=number;
-		int rem,res=0;
+		int original_number=number;
+		int result=0;
+		int remainder;
 		
-		while(originalNo!=0)
+		while(original_number!=0)
 		{
-			rem=originalNo % 10;
-			res+=Math.pow(rem, 3);
-			originalNo/=10;
+			remainder=original_number%10;
+			result+=Math.pow(remainder,3);
+			original_number/=10;
 		}
 		
-		if(res==number)
+		if(result==number)
 		{
-			System.out.println(number+" is Armstrong number");
+			System.out.println(number+" "+"is a armstrong  number");
 		}
+		
 		else
 		{
-			System.out.println(number+" is not Armstrong number");
+			System.out.println(number+"is not a armstrong  number");
 
 		}
 	}
+	
 
 }
