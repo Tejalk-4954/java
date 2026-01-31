@@ -2,7 +2,7 @@ package LoopsProgram;
 
 import java.util.Scanner;
 
-public class second {
+public class switchCase1 {
   public static void main(String[] args) {
     
 	  //switch case
