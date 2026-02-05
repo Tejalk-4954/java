@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CarRentalAgency {
 	
 
-	    // Method with object array (as per image)
+	    // Method with object array 
 	    static void findCheapest(vehicle[] cars, int days) {
 	        vehicle cheapest = cars[0];
 	        double minCost = cars[0].calculateRentalCost(days);
@@ -64,10 +64,10 @@ public class CarRentalAgency {
 	                case 1:
 	                    for (vehicle v : cars) {
 	                        System.out.println(
-	                                "ID: " + v.getVehId() +
-	                                ", Model: " + v.getModel() +
-	                                ", Category: " + v.getCategory() +
-	                                ", Daily Rate: " + v.getDailyRate()
+	                                "ID :" + v.getVehId() +"|"+
+	                                " Model:  " + v.getModel() +"|"+
+	                                " Category:  " + v.getCategory() +"|"+
+	                                " Daily Rate: " + v.getDailyRate()
 	                        );
 	                    }
 	                    break;
@@ -77,7 +77,7 @@ public class CarRentalAgency {
 	                    for (vehicle v : cars) {
 	                        if (v.getDailyRate() < 1500) {
 	                            if (v.getCategory().equalsIgnoreCase("SUV")) {
-	                                System.out.println(v.getModel() + " - RECOMMENDED");
+	                                System.out.println(v.getModel() +v.getCategory()+ " - RECOMMENDED");
 	                            }
 	                        }
 	                    }
