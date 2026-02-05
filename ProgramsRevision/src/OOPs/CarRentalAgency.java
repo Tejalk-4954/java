@@ -19,6 +19,7 @@ public class CarRentalAgency {
 	        }
 
 	        System.out.println("Cheapest Vehicle:");
+	        System.out.println("Id: " + cheapest.getVehId());
 	        System.out.println("Model: " + cheapest.getModel());
 	        System.out.println("Total Cost: " + minCost);
 	    }
