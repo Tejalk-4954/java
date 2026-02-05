@@ -5,7 +5,7 @@ public class DuplicateElements {
 public static void main(String[] args) {
 	
 	Scanner sc=new Scanner(System.in);
-	System.out.println("enetr size of array");
+	System.out.println("enter size of array");
 	int s=sc.nextInt();
 	
 	int arr[]=new int[s];
