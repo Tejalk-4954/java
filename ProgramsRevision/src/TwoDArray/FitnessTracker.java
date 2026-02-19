@@ -4,8 +4,12 @@ public class FitnessTracker {
 
 	public static void main(String[] args) {
 		
-		int[] steps= {12000,7000,8900,9000,13000,14000,10000,10500,8500,9000,
-				      16000,17000,8200,9500,7500};
+		int[] steps= {
+				        12000,7000,8900,9000,13000,
+				        14000,10000,10500,8500,9000,
+				        16000,17000,8200,9500,7500
+				      };
+		
 		
 		int weeks=steps.length/7;
 		
@@ -53,6 +57,8 @@ public class FitnessTracker {
 			}
 			
 		}
+		
+		
 		 System.out.println("Longest streak>8000 steps:"+maxStreak);
 		
 	}
