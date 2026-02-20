@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	
 	int [] [] allmarks= {
 			{88,99,76,89,80},
-			{60,34,55,40,70},
+			{32,34,35,40,40},
 			{92,81,86,89,94}
 	};
 	
